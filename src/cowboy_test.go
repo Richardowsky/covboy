@@ -39,8 +39,8 @@ func benchmarkZero(n int, array []int, b *testing.B) {
 func discomfort (arr []int ) int {
 	disc := 0
 	for i := 0; i < len(arr)-1; i++ {
-		if int(math.Abs(float(arr[i] - arr[i+1]))) > disc {
-			disc = int(math.Abs(float(arr[i] - arr[i+1])))
+		if int(math.Abs(float32(arr[i] - arr[i+1]))) > disc {
+			disc = int(math.Abs(float32(arr[i] - arr[i+1])))
 		}
 	}
 	return disc
